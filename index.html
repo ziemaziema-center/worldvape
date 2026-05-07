@@ -10,14 +10,12 @@
   <meta property="og:description" content="광운대역 1번 출구 400m. 향료 아끼지 않은 A급 정품만. 구매 강요 없음." />
   <meta property="og:type" content="business.business" />
   <meta property="og:locale" content="ko_KR" />
-
-  <!-- Schema JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "월드베이프 광운대점",
-    "description": "향료 아끼지 않은 A급 정품 액상만 직접 선별해서 취급하는 광운대역 전자담배 전문점. 액상 충전 무료, 2+1 상시 행사, 대량구매 특가.",
+    "description": "향료 아끼지 않은 A급 정품 액상만 직접 선별해서 취급하는 광운대역 전자담배 전문점.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "광운로10길 3",
@@ -32,7 +30,6 @@
     "sameAs": ["https://t.me/worldvape_gwangun"]
   }
   </script>
-
   <style>
     :root {
       --gold: #F5C842;
@@ -45,121 +42,33 @@
       --muted: #888;
       --radius: 12px;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: var(--dark);
-      color: var(--text);
-      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
-      line-height: 1.7;
-    }
-
+    body { background: var(--dark); color: var(--text); font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; line-height: 1.7; }
     a { color: inherit; text-decoration: none; }
-
-    /* NAV */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(14,14,14,0.95);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      padding: 14px 24px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(14,14,14,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
     .nav-logo { font-size: 1rem; font-weight: 700; color: var(--gold); letter-spacing: 0.04em; }
     .nav-sub { font-size: 0.75rem; color: var(--muted); }
-
-    /* HERO */
-    .hero {
-      padding: 80px 24px 64px;
-      max-width: 680px; margin: 0 auto;
-      text-align: center;
-    }
-    .hero-badge {
-      display: inline-block;
-      background: rgba(245,200,66,0.12);
-      border: 1px solid var(--border);
-      color: var(--gold);
-      font-size: 0.78rem;
-      padding: 6px 16px;
-      border-radius: 999px;
-      margin-bottom: 28px;
-      letter-spacing: 0.06em;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 6vw, 3rem);
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 20px;
-      letter-spacing: -0.02em;
-    }
+    .hero { padding: 80px 24px 64px; max-width: 680px; margin: 0 auto; text-align: center; }
+    .hero-badge { display: inline-block; background: rgba(245,200,66,0.12); border: 1px solid var(--border); color: var(--gold); font-size: 0.78rem; padding: 6px 16px; border-radius: 999px; margin-bottom: 28px; letter-spacing: 0.06em; }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 20px; letter-spacing: -0.02em; }
     .hero h1 span { color: var(--gold); }
-    .hero p {
-      font-size: 1rem;
-      color: var(--muted);
-      margin-bottom: 36px;
-      line-height: 1.8;
-    }
+    .hero p { font-size: 1rem; color: var(--muted); margin-bottom: 36px; line-height: 1.8; }
     .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .btn-primary {
-      background: var(--gold);
-      color: #000;
-      font-weight: 700;
-      padding: 14px 28px;
-      border-radius: var(--radius);
-      font-size: 0.95rem;
-      transition: opacity 0.2s;
-    }
+    .btn-primary { background: var(--gold); color: #000; font-weight: 700; padding: 14px 28px; border-radius: var(--radius); font-size: 0.95rem; transition: opacity 0.2s; }
     .btn-primary:hover { opacity: 0.85; }
-    .btn-secondary {
-      border: 1px solid var(--border);
-      color: var(--gold);
-      padding: 14px 28px;
-      border-radius: var(--radius);
-      font-size: 0.95rem;
-      background: transparent;
-      transition: background 0.2s;
-    }
+    .btn-secondary { border: 1px solid var(--border); color: var(--gold); padding: 14px 28px; border-radius: var(--radius); font-size: 0.95rem; background: transparent; transition: background 0.2s; }
     .btn-secondary:hover { background: rgba(245,200,66,0.07); }
-
-    /* POLICY CARDS */
     .section { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
-    .section-label {
-      font-size: 0.72rem;
-      color: var(--gold);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-    .section-title {
-      font-size: clamp(1.4rem, 4vw, 2rem);
-      font-weight: 800;
-      margin-bottom: 36px;
-      letter-spacing: -0.01em;
-    }
-
+    .section-label { font-size: 0.72rem; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; }
+    .section-title { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 800; margin-bottom: 36px; letter-spacing: -0.01em; }
     .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-    }
+    .card { background: var(--dark2); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; }
     .card-icon { font-size: 1.8rem; margin-bottom: 12px; }
     .card-title { font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
     .card-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
-
-    /* DIVIDER */
     .divider { border: none; border-top: 1px solid var(--border); margin: 0 24px; }
-
-    /* PRICING */
     .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-    .price-card {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 32px 28px;
-    }
+    .price-card { background: var(--dark2); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 28px; }
     .price-card.featured { border-color: var(--gold); }
     .price-label { font-size: 0.78rem; color: var(--muted); margin-bottom: 8px; letter-spacing: 0.06em; }
     .price-name { font-size: 1.1rem; font-weight: 700; margin-bottom: 20px; }
@@ -169,95 +78,37 @@
     .price-features li { font-size: 0.85rem; color: var(--muted); padding: 6px 0; border-bottom: 1px solid var(--border); }
     .price-features li:last-child { border-bottom: none; }
     .price-features li::before { content: "✓ "; color: var(--gold); }
-
-    /* TELEGRAM CTA */
-    .tg-box {
-      background: linear-gradient(135deg, rgba(245,200,66,0.08), rgba(245,200,66,0.03));
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 40px 32px;
-      text-align: center;
-    }
+    .tg-box { background: linear-gradient(135deg, rgba(245,200,66,0.08), rgba(245,200,66,0.03)); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 32px; text-align: center; }
     .tg-box h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 12px; }
     .tg-box p { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; line-height: 1.8; }
-
-    /* WHY US */
     .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .why-card {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-    }
+    .why-card { background: var(--dark2); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; }
     .why-icon { font-size: 1.6rem; margin-bottom: 14px; }
     .why-title { font-weight: 700; margin-bottom: 8px; }
     .why-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
-
-    /* BRAND SCROLL */
     .brand-scroll-wrap { overflow: hidden; padding: 20px 0; }
-    .brand-scroll {
-      display: flex; gap: 24px; width: max-content;
-      animation: scroll-left 20s linear infinite;
-    }
-    .brand-scroll span {
-      font-size: 0.85rem; color: var(--muted);
-      white-space: nowrap;
-      padding: 8px 20px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      background: var(--dark2);
-    }
-    @keyframes scroll-left {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    /* REVIEWS */
+    .brand-scroll { display: flex; gap: 24px; width: max-content; animation: scroll-left 20s linear infinite; }
+    .brand-scroll span { font-size: 0.85rem; color: var(--muted); white-space: nowrap; padding: 8px 20px; border: 1px solid var(--border); border-radius: 999px; background: var(--dark2); }
+    @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
     .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-    .review-card {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-    }
+    .review-card { background: var(--dark2); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
     .review-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 12px; }
     .review-text { font-size: 0.88rem; line-height: 1.8; color: var(--text); margin-bottom: 16px; }
     .review-meta { font-size: 0.75rem; color: var(--muted); }
-
-    /* FAQ */
     .faq-list { display: flex; flex-direction: column; gap: 12px; }
-    .faq-item {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-    }
+    .faq-item { background: var(--dark2); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
     .faq-q { font-weight: 700; margin-bottom: 10px; font-size: 0.95rem; }
     .faq-a { font-size: 0.88rem; color: var(--muted); line-height: 1.8; }
     .faq-a strong { color: var(--text); }
-
-    /* FOOTER */
-    footer {
-      background: var(--dark2);
-      border-top: 1px solid var(--border);
-      padding: 48px 24px;
-      text-align: center;
-    }
+    footer { background: var(--dark2); border-top: 1px solid var(--border); padding: 48px 24px; text-align: center; }
     .footer-name { font-size: 1.1rem; font-weight: 700; color: var(--gold); margin-bottom: 16px; }
     .footer-info { font-size: 0.85rem; color: var(--muted); line-height: 2; }
     .footer-links { display: flex; gap: 16px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
-    .footer-links a {
-      font-size: 0.82rem; color: var(--muted);
-      border: 1px solid var(--border);
-      padding: 8px 18px; border-radius: 999px;
-      transition: color 0.2s, border-color 0.2s;
-    }
+    .footer-links a { font-size: 0.82rem; color: var(--muted); border: 1px solid var(--border); padding: 8px 18px; border-radius: 999px; transition: color 0.2s, border-color 0.2s; }
     .footer-links a:hover { color: var(--gold); border-color: var(--gold); }
   </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav>
   <div>
     <div class="nav-logo">월드베이프 광운대점</div>
@@ -265,92 +116,43 @@
   </div>
   <a href="tel:0507-1301-9953" class="btn-primary" style="padding:10px 20px;font-size:0.85rem;">📞 전화하기</a>
 </nav>
-
-<!-- HERO -->
 <section class="hero">
   <div class="hero-badge">🟡 광운대역 1번 출구 400m</div>
   <h1>진하고 맛있는<br><span>A급 액상만</span><br>취급합니다</h1>
-  <p>
-    종류는 많지 않아도 괜찮습니다.<br>
-    향료 아끼지 않은 정품만 직접 골라서 들여놓습니다.<br>
-    뭘 골라도 실망 없는 매장.
-  </p>
+  <p>종류는 많지 않아도 괜찮습니다.<br>향료 아끼지 않은 정품만 직접 골라서 들여놓습니다.<br>뭘 골라도 실망 없는 매장.</p>
   <div class="hero-btns">
     <a href="https://t.me/worldvape_gwangun" class="btn-primary">📲 텔레그램 내부망 입장</a>
     <a href="tel:0507-1301-9953" class="btn-secondary">📞 전화하기</a>
   </div>
 </section>
-
 <hr class="divider" />
-
-<!-- 무조건 정책 -->
 <section class="section">
   <div class="section-label">무조건 정책</div>
   <div class="section-title">눈치 없이 편하게<br>들어오세요</div>
   <div class="cards">
-    <div class="card">
-      <div class="card-icon">🆓</div>
-      <div class="card-title">액상 충전 무료</div>
-      <div class="card-desc">본인 기기만 들고 오면 액상 충전 완전 무료. 구매 강요 없음. 눈치 없음.</div>
-    </div>
-    <div class="card">
-      <div class="card-icon">🚫</div>
-      <div class="card-title">구매 강요 없음</div>
-      <div class="card-desc">액상만 리필하고 가셔도 알바생은 섭섭하지 않습니다. 진짜로요.</div>
-    </div>
-    <div class="card">
-      <div class="card-icon">✅</div>
-      <div class="card-title">A급 정품만</div>
-      <div class="card-desc">직접 검증한 액상만 들여놓습니다. 향료 안 아낀 것만. 맛 없으면 안 팝니다.</div>
-    </div>
+    <div class="card"><div class="card-icon">🆓</div><div class="card-title">액상 충전 무료</div><div class="card-desc">본인 기기만 들고 오면 액상 충전 완전 무료. 구매 강요 없음. 눈치 없음.</div></div>
+    <div class="card"><div class="card-icon">🚫</div><div class="card-title">구매 강요 없음</div><div class="card-desc">액상만 리필하고 가셔도 알바생은 섭섭하지 않습니다. 진짜로요.</div></div>
+    <div class="card"><div class="card-icon">✅</div><div class="card-title">A급 정품만</div><div class="card-desc">직접 검증한 액상만 들여놓습니다. 향료 안 아낀 것만. 맛 없으면 안 팝니다.</div></div>
   </div>
 </section>
-
 <hr class="divider" />
-
-<!-- WHY US -->
 <section class="section">
   <div class="section-label">WHY US</div>
   <div class="section-title">왜 광운대에서<br>여기인가</div>
   <div class="why-grid">
-    <div class="why-card">
-      <div class="why-icon">🏆</div>
-      <div class="why-title">엄선된 A급 액상만</div>
-      <div class="why-desc">향료 아끼지 않은 진하고 맛있는 정품만 직접 선별해서 취급합니다. 많은 것보다 확실한 것. 뭘 골라도 실망 없습니다.</div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🔋</div>
-      <div class="why-title">액상 무료 충전</div>
-      <div class="why-desc">본인 기기만 들고 오면 됩니다. 액상 충전 완전 무료. 구매 강요 없음. 눈치 없음. 그냥 들어오세요.</div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🎁</div>
-      <div class="why-title">전 액상 2+1 상시</div>
-      <div class="why-desc">따로 행사 기간 없음. 매장 내 모든 액상 2+1 상시 적용. 그냥 와서 고르시면 됩니다.</div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">💰</div>
-      <div class="why-title">대량구매 특가</div>
-      <div class="why-desc">많이 살수록 저렴해집니다. 텔레그램 내부망에서 수량별 특가 확인. 온라인보다 저렴하게 가져가세요.</div>
-    </div>
+    <div class="why-card"><div class="why-icon">🏆</div><div class="why-title">엄선된 A급 액상만</div><div class="why-desc">향료 아끼지 않은 진하고 맛있는 정품만 직접 선별해서 취급합니다. 많은 것보다 확실한 것. 뭘 골라도 실망 없습니다.</div></div>
+    <div class="why-card"><div class="why-icon">🔋</div><div class="why-title">액상 무료 충전</div><div class="why-desc">본인 기기만 들고 오면 됩니다. 액상 충전 완전 무료. 구매 강요 없음. 눈치 없음. 그냥 들어오세요.</div></div>
+    <div class="why-card"><div class="why-icon">🎁</div><div class="why-title">전 액상 2+1 상시</div><div class="why-desc">따로 행사 기간 없음. 매장 내 모든 액상 2+1 상시 적용. 그냥 와서 고르시면 됩니다.</div></div>
+    <div class="why-card"><div class="why-icon">💰</div><div class="why-title">대량구매 특가</div><div class="why-desc">많이 살수록 저렴해집니다. 텔레그램 내부망에서 수량별 특가 확인. 온라인보다 저렴하게 가져가세요.</div></div>
   </div>
 </section>
-
-<!-- BRAND SCROLL -->
 <div class="brand-scroll-wrap">
   <div class="brand-scroll">
-    <span>Bomba</span><span>Malone</span><span>Elfbar</span><span>Dio Liquid</span>
-    <span>Punch</span><span>Punchsour</span><span>Zero</span><span>Rozella</span>
-    <span>신인장</span><span>TXXX</span><span>Horizon</span><span>Dio X</span>
-    <span>Bomba</span><span>Malone</span><span>Elfbar</span><span>Dio Liquid</span>
-    <span>Punch</span><span>Punchsour</span><span>Zero</span><span>Rozella</span>
-    <span>신인장</span><span>TXXX</span><span>Horizon</span><span>Dio X</span>
+    <span>Bomba</span><span>Malone</span><span>Elfbar</span><span>Dio Liquid</span><span>Punch</span><span>Punchsour</span><span>Zero</span><span>Rozella</span><span>신인장</span><span>TXXX</span><span>Horizon</span><span>Dio X</span>
+    <span>Bomba</span><span>Malone</span><span>Elfbar</span><span>Dio Liquid</span><span>Punch</span><span>Punchsour</span><span>Zero</span><span>Rozella</span><span>신인장</span><span>TXXX</span><span>Horizon</span><span>Dio X</span>
   </div>
 </div>
-
 <hr class="divider" />
-
-<!-- PRICING -->
 <section class="section">
   <div class="section-label">PRICING</div>
   <div class="section-title">투명한 가격표</div>
@@ -360,122 +162,55 @@
       <div class="price-name">2만퍼프 · 2% 니코틴</div>
       <div class="price-amount">20,000원</div>
       <div class="price-unit">1개 기준</div>
-      <ul class="price-features">
-        <li>브랜드 무관 선택 가능</li>
-        <li>A급 정품만 취급</li>
-      </ul>
+      <ul class="price-features"><li>브랜드 무관 선택 가능</li><li>A급 정품만 취급</li></ul>
     </div>
     <div class="price-card featured">
       <div class="price-label">정품 액상 · 베스트</div>
       <div class="price-name">브랜드 무관 선택</div>
       <div class="price-amount">64,000원</div>
       <div class="price-unit">4병 묶음 · 병당 16,000원</div>
-      <ul class="price-features">
-        <li>2+1 행사 상시 진행</li>
-        <li>향료 아끼지 않은 정품만</li>
-        <li>대량구매 추가 특가</li>
-      </ul>
+      <ul class="price-features"><li>2+1 행사 상시 진행</li><li>향료 아끼지 않은 정품만</li><li>대량구매 추가 특가</li></ul>
     </div>
   </div>
-
   <div class="tg-box" style="margin-top:24px;">
     <h3>💛 아는 사람은 압니다</h3>
     <p>공식 가격보다 훨씬 저렴한 <strong>대량구매 특가</strong>가 있습니다.<br>텔레그램 내부망에서 이번 주 특가와 정보를 확인하세요.<br>매장 방문 전 채널 확인 권장.</p>
     <a href="https://t.me/worldvape_gwangun" class="btn-primary">📲 텔레그램 내부망 입장하기</a>
   </div>
 </section>
-
 <hr class="divider" />
-
-<!-- REVIEWS -->
 <section class="section">
   <div class="section-label">REVIEWS</div>
   <div class="section-title">네이버 방문자 리뷰<br>900개+</div>
   <div class="reviews-grid">
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <div class="review-text">"액상 종류는 많진 않은데 있는 거 다 맛있어요. 진하고 향 확실한 것만 골라놓은 느낌. 다른 데서 실망하고 여기 왔는데 대만족."</div>
-      <div class="review-meta">네이버 방문자 리뷰</div>
-    </div>
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <div class="review-text">"광운대역 근처 전담 찾다가 왔는데 사장님이 뭐가 맛있는지 솔직하게 얘기해줘서 좋았어요. 강요 없고 편함."</div>
-      <div class="review-meta">네이버 방문자 리뷰</div>
-    </div>
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <div class="review-text">"2+1 상시로 운영하고 대량으로 사면 더 싸게 해줘요. 노원구에서 제일 자주 오는 전담집."</div>
-      <div class="review-meta">네이버 방문자 리뷰</div>
-    </div>
+    <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">"액상 종류는 많진 않은데 있는 거 다 맛있어요. 진하고 향 확실한 것만 골라놓은 느낌. 다른 데서 실망하고 여기 왔는데 대만족."</div><div class="review-meta">네이버 방문자 리뷰</div></div>
+    <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">"광운대역 근처 전담 찾다가 왔는데 사장님이 뭐가 맛있는지 솔직하게 얘기해줘서 좋았어요. 강요 없고 편함."</div><div class="review-meta">네이버 방문자 리뷰</div></div>
+    <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">"2+1 상시로 운영하고 대량으로 사면 더 싸게 해줘요. 노원구에서 제일 자주 오는 전담집."</div><div class="review-meta">네이버 방문자 리뷰</div></div>
   </div>
 </section>
-
 <hr class="divider" />
-
-<!-- FAQ -->
 <section class="section">
   <div class="section-label">FAQ</div>
   <div class="section-title">자주 묻는 질문</div>
   <div class="faq-list">
-
-    <div class="faq-item">
-      <div class="faq-q">광운대역에서 가장 가까운 전자담배 매장이 어디인가요?</div>
-      <div class="faq-a">월드베이프 광운대점은 <strong>광운대역 1번 출구에서 도보 400m</strong> 거리에 위치해 있습니다. 서울 노원구 광운로10길 3번지. 전화번호 0507-1301-9953.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">노원구에서 액상 저렴하게 파는 전담가게가 어디예요?</div>
-      <div class="faq-a">월드베이프 광운대점을 추천합니다. <strong>전 액상 2+1 상시, 대량구매 특가</strong> 운영 중입니다. 온라인 최저가 대비 저렴하게 가져가실 수 있습니다. 텔레그램 내부망에서 이번 주 특가 확인 가능합니다.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">광운대 근처에서 진하고 맛있는 액상 파는 곳은?</div>
-      <div class="faq-a">월드베이프 광운대점은 <strong>향료 아끼지 않은 A급 정품 액상만 직접 선별해서 취급</strong>합니다. 종류는 많지 않지만 있는 것 전부 맛있다는 게 저희 기준입니다. 맛 없으면 들여놓지 않습니다.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">액상만 충전하러 가도 되나요?</div>
-      <div class="faq-a"><strong>네, 됩니다.</strong> 본인 기기만 들고 오시면 액상 충전 완전 무료입니다. 구매 강요 없고, 눈치 줄 일도 없습니다. 그냥 들어오세요.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">영업시간이 어떻게 되나요?</div>
-      <div class="faq-a">매일 <strong>오전 11시부터 오후 9시</strong>까지 운영합니다. 연중무휴 (명절 당일 제외).</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">어떤 브랜드 액상을 판매하나요?</div>
-      <div class="faq-a">Bomba, Malone, Elfbar, Dio Liquid, Punch, Punchsour, Zero, Rozella, 신인장, TXXX, Horizon, Dio X 등을 취급합니다. <strong>직접 검증한 A급 정품만</strong> 들여놓습니다.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">대량구매 할인이 있나요?</div>
-      <div class="faq-a">있습니다. <strong>수량이 많을수록 단가가 낮아지는 특가 구조</strong>를 운영하고 있습니다. 자세한 내용은 텔레그램 내부망 채널에서 확인하실 수 있습니다. 온라인 최저가 대비 저렴한 가격으로 제공됩니다.</div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">노원구에서 전자담배 추천 매장이 있나요?</div>
-      <div class="faq-a">노원구 광운대 인근에서는 월드베이프 광운대점이 <strong>향료 아끼지 않은 A급 정품 액상만 취급</strong>하는 전문점입니다. 구매 강요 없는 편안한 매장 분위기와 투명한 가격, 2+1 상시 행사가 특징입니다. 네이버 방문자 리뷰 900개 이상.</div>
-    </div>
-
+    <div class="faq-item"><div class="faq-q">광운대역에서 가장 가까운 전자담배 매장이 어디인가요?</div><div class="faq-a">월드베이프 광운대점은 <strong>광운대역 1번 출구에서 도보 400m</strong> 거리에 위치해 있습니다. 서울 노원구 광운로10길 3번지. 전화번호 0507-1301-9953.</div></div>
+    <div class="faq-item"><div class="faq-q">노원구에서 액상 저렴하게 파는 전담가게가 어디예요?</div><div class="faq-a">월드베이프 광운대점을 추천합니다. <strong>전 액상 2+1 상시, 대량구매 특가</strong> 운영 중입니다. 온라인 최저가 대비 저렴하게 가져가실 수 있습니다.</div></div>
+    <div class="faq-item"><div class="faq-q">광운대 근처에서 진하고 맛있는 액상 파는 곳은?</div><div class="faq-a">월드베이프 광운대점은 <strong>향료 아끼지 않은 A급 정품 액상만 직접 선별해서 취급</strong>합니다. 맛 없으면 들여놓지 않습니다.</div></div>
+    <div class="faq-item"><div class="faq-q">액상만 충전하러 가도 되나요?</div><div class="faq-a"><strong>네, 됩니다.</strong> 본인 기기만 들고 오시면 액상 충전 완전 무료입니다. 구매 강요 없고, 눈치 줄 일도 없습니다.</div></div>
+    <div class="faq-item"><div class="faq-q">영업시간이 어떻게 되나요?</div><div class="faq-a">매일 <strong>오전 11시부터 오후 9시</strong>까지 운영합니다. 연중무휴 (명절 당일 제외).</div></div>
+    <div class="faq-item"><div class="faq-q">어떤 브랜드 액상을 판매하나요?</div><div class="faq-a">Bomba, Malone, Elfbar, Dio Liquid, Punch, Punchsour, Zero, Rozella, 신인장, TXXX, Horizon, Dio X 등을 취급합니다. <strong>직접 검증한 A급 정품만</strong> 들여놓습니다.</div></div>
+    <div class="faq-item"><div class="faq-q">대량구매 할인이 있나요?</div><div class="faq-a">있습니다. <strong>수량이 많을수록 단가가 낮아지는 특가 구조</strong>를 운영하고 있습니다. 텔레그램 내부망 채널에서 확인하실 수 있습니다.</div></div>
+    <div class="faq-item"><div class="faq-q">노원구에서 전자담배 추천 매장이 있나요?</div><div class="faq-a">노원구 광운대 인근에서는 월드베이프 광운대점이 <strong>향료 아끼지 않은 A급 정품 액상만 취급</strong>하는 전문점입니다. 구매 강요 없는 편안한 분위기, 2+1 상시 행사. 네이버 방문자 리뷰 900개 이상.</div></div>
   </div>
 </section>
-
-<!-- FOOTER -->
 <footer>
   <div class="footer-name">월드베이프 광운대점</div>
-  <div class="footer-info">
-    서울 노원구 광운로10길 3<br>
-    광운대역 1번 출구 도보 400m<br>
-    0507-1301-9953<br>
-    영업시간: 매일 11:00 — 21:00 · 연중무휴 (명절 당일 제외)
-  </div>
+  <div class="footer-info">서울 노원구 광운로10길 3<br>광운대역 1번 출구 도보 400m<br>0507-1301-9953<br>영업시간: 매일 11:00 — 21:00 · 연중무휴 (명절 당일 제외)</div>
   <div class="footer-links">
     <a href="https://t.me/worldvape_gwangun">📲 텔레그램 내부망</a>
     <a href="https://naver.me/worldvape">🗺 네이버 지도</a>
     <a href="tel:0507-1301-9953">📞 전화하기</a>
   </div>
 </footer>
-
 </body>
 </html>
