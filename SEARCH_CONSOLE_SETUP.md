@@ -22,6 +22,7 @@ Submit:
 
 ## 4. Indexing Checklist
 
+- Before requesting indexing, confirm `curl -I https://worldvape.mykindredai.com/sitemap.xml` returns `200 OK` without certificate errors. Current post-deploy check found a certificate subject mismatch, so GitHub Pages custom-domain SSL must be repaired first.
 - Request indexing for `/`, `/kwangwoon-vape/`, `/nowon-vape/`, `/입호흡액상추천/`, `/노원액상추천/`, `/faq/`, `/guide/`, `/liquid-guide/`, `/beginner-guide/`, and `/blog/`.
 - Inspect one Korean slug URL to confirm Google can crawl encoded Korean paths.
 - Check Coverage/Pages report after 48-72 hours.

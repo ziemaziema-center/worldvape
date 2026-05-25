@@ -737,6 +737,7 @@ Target: {SITE_URL}
 - Existing structured data attempted LocalBusiness and FAQ, but broken encoding and malformed strings made JSON-LD unreliable.
 - Metadata coverage was homepage-only. Long-tail local intents such as `광운대 전자담배`, `노원 전자담배`, `입호흡 액상 추천`, and `노원 액상 추천` had no dedicated canonical landing pages.
 - Review content risk: existing page mixed review-like text into markup. The new implementation separates verified review-platform links from non-fake review highlight summaries.
+- Post-deploy HTTPS check found a custom-domain certificate mismatch on `https://worldvape.mykindredai.com`; the sitemap served `200 OK` over HTTP and over HTTPS only with certificate verification bypassed. Fix GitHub Pages custom-domain SSL before requesting Google indexing.
 
 ## Implemented Fixes
 
@@ -776,6 +777,7 @@ Submit:
 
 ## 4. Indexing Checklist
 
+- Before requesting indexing, confirm `curl -I https://worldvape.mykindredai.com/sitemap.xml` returns `200 OK` without certificate errors. Current post-deploy check found a certificate subject mismatch, so GitHub Pages custom-domain SSL must be repaired first.
 - Request indexing for `/`, `/kwangwoon-vape/`, `/nowon-vape/`, `/입호흡액상추천/`, `/노원액상추천/`, `/faq/`, `/guide/`, `/liquid-guide/`, `/beginner-guide/`, and `/blog/`.
 - Inspect one Korean slug URL to confirm Google can crawl encoded Korean paths.
 - Check Coverage/Pages report after 48-72 hours.
@@ -790,6 +792,9 @@ Implemented a complete static SEO footprint for `{SITE_URL}`:
 - Blog engine with markdown source, 30 Korean SEO articles, related internal links, category/tag metadata, and CTA funnel.
 - Technical SEO assets: sitemap, robots, canonical URLs, JSON-LD, OG/Twitter metadata, llms.txt, image alt text, CSS preload, lightweight layout.
 - Telegram funnel with premium/private tone and no aggressive pricing spam.
+
+Deployment note:
+- Site files are deployed to GitHub Pages, but HTTPS certificate verification currently fails for the custom domain. Repair the GitHub Pages custom-domain certificate before using the HTTPS sitemap in Search Console.
 """,
         "IMPLEMENTED_FEATURES.md": """# Implemented Features
 
@@ -813,6 +818,7 @@ Implemented a complete static SEO footprint for `{SITE_URL}`:
         "NEXT_30_DAY_SEO_PLAN.md": """# Next 30 Day SEO Plan
 
 Week 1:
+- Repair GitHub Pages custom-domain HTTPS certificate mismatch.
 - Submit sitemap to Google Search Console.
 - Request indexing for all local landing pages and guide pages.
 - Update Google Business Profile and Naver Place descriptions.

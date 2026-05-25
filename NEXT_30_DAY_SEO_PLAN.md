@@ -1,6 +1,7 @@
 # Next 30 Day SEO Plan
 
 Week 1:
+- Repair GitHub Pages custom-domain HTTPS certificate mismatch.
 - Submit sitemap to Google Search Console.
 - Request indexing for all local landing pages and guide pages.
 - Update Google Business Profile and Naver Place descriptions.

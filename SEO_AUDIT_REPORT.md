@@ -10,6 +10,7 @@ Target: https://worldvape.mykindredai.com
 - Existing structured data attempted LocalBusiness and FAQ, but broken encoding and malformed strings made JSON-LD unreliable.
 - Metadata coverage was homepage-only. Long-tail local intents such as `광운대 전자담배`, `노원 전자담배`, `입호흡 액상 추천`, and `노원 액상 추천` had no dedicated canonical landing pages.
 - Review content risk: existing page mixed review-like text into markup. The new implementation separates verified review-platform links from non-fake review highlight summaries.
+- Post-deploy HTTPS check found a custom-domain certificate mismatch on `https://worldvape.mykindredai.com`; the sitemap served `200 OK` over HTTP and over HTTPS only with certificate verification bypassed. Fix GitHub Pages custom-domain SSL before requesting Google indexing.
 
 ## Implemented Fixes
 

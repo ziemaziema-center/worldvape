@@ -7,3 +7,6 @@ Implemented a complete static SEO footprint for `https://worldvape.mykindredai.c
 - Blog engine with markdown source, 30 Korean SEO articles, related internal links, category/tag metadata, and CTA funnel.
 - Technical SEO assets: sitemap, robots, canonical URLs, JSON-LD, OG/Twitter metadata, llms.txt, image alt text, CSS preload, lightweight layout.
 - Telegram funnel with premium/private tone and no aggressive pricing spam.
+
+Deployment note:
+- Site files are deployed to GitHub Pages, but HTTPS certificate verification currently fails for the custom domain. Repair the GitHub Pages custom-domain certificate before using the HTTPS sitemap in Search Console.
