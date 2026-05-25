@@ -9,4 +9,4 @@ Implemented a complete static SEO footprint for `https://worldvape.mykindredai.c
 - Telegram funnel with premium/private tone and no aggressive pricing spam.
 
 Deployment note:
-- Site files are deployed to GitHub Pages, but HTTPS certificate verification currently fails for the custom domain. Repair the GitHub Pages custom-domain certificate before using the HTTPS sitemap in Search Console.
+- Site files are deployed to GitHub Pages and HTTPS is enforced for `worldvape.mykindredai.com`.

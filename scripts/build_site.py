@@ -737,7 +737,7 @@ Target: {SITE_URL}
 - Existing structured data attempted LocalBusiness and FAQ, but broken encoding and malformed strings made JSON-LD unreliable.
 - Metadata coverage was homepage-only. Long-tail local intents such as `광운대 전자담배`, `노원 전자담배`, `입호흡 액상 추천`, and `노원 액상 추천` had no dedicated canonical landing pages.
 - Review content risk: existing page mixed review-like text into markup. The new implementation separates verified review-platform links from non-fake review highlight summaries.
-- Post-deploy HTTPS check found a custom-domain certificate mismatch on `https://worldvape.mykindredai.com`; the sitemap served `200 OK` over HTTP and over HTTPS only with certificate verification bypassed. Fix GitHub Pages custom-domain SSL before requesting Google indexing.
+- Post-deploy HTTPS issue was found and fixed on 2026-05-25. GitHub Pages custom domain was reset/re-added, certificate state became `approved`, `https_enforced=true`, HTTPS sitemap returns `200 OK`, and HTTP redirects to HTTPS.
 
 ## Implemented Fixes
 
@@ -777,7 +777,7 @@ Submit:
 
 ## 4. Indexing Checklist
 
-- Before requesting indexing, confirm `curl -I https://worldvape.mykindredai.com/sitemap.xml` returns `200 OK` without certificate errors. Current post-deploy check found a certificate subject mismatch, so GitHub Pages custom-domain SSL must be repaired first.
+- Preflight passed on 2026-05-25: `https://worldvape.mykindredai.com/sitemap.xml` returns `200 OK` without certificate errors and HTTP redirects to HTTPS.
 - Request indexing for `/`, `/kwangwoon-vape/`, `/nowon-vape/`, `/입호흡액상추천/`, `/노원액상추천/`, `/faq/`, `/guide/`, `/liquid-guide/`, `/beginner-guide/`, and `/blog/`.
 - Inspect one Korean slug URL to confirm Google can crawl encoded Korean paths.
 - Check Coverage/Pages report after 48-72 hours.
@@ -794,7 +794,7 @@ Implemented a complete static SEO footprint for `{SITE_URL}`:
 - Telegram funnel with premium/private tone and no aggressive pricing spam.
 
 Deployment note:
-- Site files are deployed to GitHub Pages, but HTTPS certificate verification currently fails for the custom domain. Repair the GitHub Pages custom-domain certificate before using the HTTPS sitemap in Search Console.
+- Site files are deployed to GitHub Pages and HTTPS is enforced for `worldvape.mykindredai.com`.
 """,
         "IMPLEMENTED_FEATURES.md": """# Implemented Features
 
@@ -818,7 +818,7 @@ Deployment note:
         "NEXT_30_DAY_SEO_PLAN.md": """# Next 30 Day SEO Plan
 
 Week 1:
-- Repair GitHub Pages custom-domain HTTPS certificate mismatch.
+- Submit the now-valid HTTPS sitemap to Google Search Console.
 - Submit sitemap to Google Search Console.
 - Request indexing for all local landing pages and guide pages.
 - Update Google Business Profile and Naver Place descriptions.
@@ -875,6 +875,41 @@ Local SEO Posting Strategy:
 - 주 1회: 광운대/노원 방문 동선 포스트
 - 월 2회: 전자담배 관리 팁
 - 월 1회: FAQ 업데이트형 포스트
+""",
+        "INDEXING_SUBMISSION_READY.md": f"""# Indexing Submission Ready
+
+Status: ready as of 2026-05-25 16:10 KST
+
+## HTTPS Preflight
+
+- GitHub Pages certificate: approved
+- HTTPS enforced: true
+- HTTPS sitemap: `{SITE_URL}/sitemap.xml`
+- HTTP sitemap: redirects to HTTPS
+- Robots sitemap directive: present
+
+## Submit In Google Search Console
+
+Property:
+`{SITE_URL}/`
+
+Sitemap:
+`{SITE_URL}/sitemap.xml`
+
+Priority URL inspection queue:
+
+1. `{SITE_URL}/`
+2. `{SITE_URL}/kwangwoon-vape/`
+3. `{SITE_URL}/nowon-vape/`
+4. `{SITE_URL}/노원전자담배/`
+5. `{SITE_URL}/광운대전자담배/`
+6. `{SITE_URL}/입호흡액상추천/`
+7. `{SITE_URL}/노원액상추천/`
+8. `{SITE_URL}/faq/`
+9. `{SITE_URL}/guide/`
+10. `{SITE_URL}/liquid-guide/`
+11. `{SITE_URL}/beginner-guide/`
+12. `{SITE_URL}/blog/`
 """,
     }
 
