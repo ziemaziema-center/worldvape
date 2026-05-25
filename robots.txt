@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /backups/
+Disallow: /scripts/
+Sitemap: https://worldvape.mykindredai.com/sitemap.xml
